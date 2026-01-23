@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBZ Admin - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container wide">
+        <h1>Administration</h1>
+
+        <div style="text-align: right; margin-bottom: 2rem;">
+            <a href="page22.html" style="text-decoration:none;"><button class="secondary"
+                    style="width: auto; margin-right: 15px;">Voir Registre (Tout)</button></a>
+            <a href="page11.html" class="link-text" style="display:inline;">Déconnexion</a>
+        </div>
+
+        <!-- Section 1: Validation -->
+        <div style="margin-bottom: 3rem;">
+            <h2
+                style="color:var(--primary); font-size:1.5rem; margin-bottom:1rem; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:10px;">
+                Validations en attente</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nom & Prénom</th>
+                        <th>Adresse</th>
+                        <th>Titre</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="pendingList">
+                    <!-- Javascript will load pending users here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Section 2: Communication -->
+        <div>
+            <h2
+                style="color:var(--primary); font-size:1.5rem; margin-bottom:1rem; border-bottom:1px solid rgba(255,255,255,0.1); padding-bottom:10px;">
+                Espace Communication</h2>
+            <div id="adminChatList">
+                <!-- Javascript will load messages here -->
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

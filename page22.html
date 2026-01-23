@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBZ Admin - Registre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container wide">
+        <h1>Registre Utilisateurs</h1>
+        <p class="subtitle">Liste des comptes actifs</p>
+
+        <div style="text-align: right; margin-bottom: 10px;">
+            <a href="page21.html" class="link-text" style="display:inline; margin-right:15px;">Retour validations</a>
+            <a href="page11.html" class="link-text" style="display:inline;">Déconnexion</a>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Titre</th>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Adresse</th>
+                    <th>Mot de passe</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="fullList">
+                <!-- Javascript will load all active users here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
