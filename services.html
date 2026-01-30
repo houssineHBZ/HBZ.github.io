@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Nos services | Spring Travel Services</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>body{font-family:Poppins,sans-serif}</style>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: '#08a3ab',
+        secondary: '#0e11cf',
+      }
+    }
+  }
+}
+</script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+<header class="fixed w-full bg-white/90 backdrop-blur shadow z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <img src="logo.jpg" class="h-14">
+    <nav class="space-x-6 hidden md:flex font-medium">
+      <a href="index.html" class="hover:text-primary">Home</a>
+      <a href="about.html" class="hover:text-primary">À propos</a>
+      <a href="services.html" class="hover:text-primary">Services</a>
+      <a href="agences.html" class="hover:text-primary ">Nos agences</a>
+      <a href="contact.html" class="text-primary font-semibold">Contact</a>
+    </nav>
+  </div>
+</header>
+<!-- TITLE -->
+<section class="pt-32 pb-20 bg-white text-center" style="background-image: url('fond2.webp');">
+  <h1 class="text-5xl font-bold text-blue-700 mb-6">Nos services</h1>
+  <p class="max-w-3xl mx-auto text-gray-600 text-lg">
+    Des solutions complètes pour organiser vos voyages en toute confiance,
+    en partenariat avec TunisiaBooking.
+  </p>
+</section>
+<br>
+<!-- SERVICES GRID -->
+<section class="max-w-7xl mx-auto px-6 pb-24 grid md:grid-cols-2 gap-14">
+
+<!-- CARD -->
+<div class="bg-white rounded-2xl shadow hover:shadow-xl transition overflow-hidden">
+<img src="vol.webp" class="h-60 w-full object-cover">
+<div class="p-8">
+<h2 class="text-2xl font-semibold text-blue-700 mb-4">Vols</h2>
+<p class="text-gray-600 mb-6">
+Réservez vos billets d’avion aux meilleurs tarifs,
+avec un accompagnement personnalisé.
+</p>
+<a href="services-vols.html" class="text-blue-600 font-semibold hover:underline">
+Voir plus →
+</a>
+</div>
+</div>
+
+<div class="bg-white rounded-2xl shadow hover:shadow-xl transition overflow-hidden">
+<img src="hotel.jfif" class="h-60 w-full object-cover">
+<div class="p-8">
+<h2 class="text-2xl font-semibold text-blue-700 mb-4">Hôtels</h2>
+<p class="text-gray-600 mb-6">
+Large choix d’hôtels partenaires adaptés à tous les budgets.
+</p>
+<a href="services-hotels.html" class="text-blue-600 font-semibold hover:underline">
+Voir plus →
+</a>
+</div>
+</div>
+
+<div class="bg-white rounded-2xl shadow hover:shadow-xl transition overflow-hidden">
+<img src="omra.jfif" class="h-60 w-full object-cover">
+<div class="p-8">
+<h2 class="text-2xl font-semibold text-blue-700 mb-4"> Omra</h2>
+<p class="text-gray-600 mb-6">
+Organisation complète de la Omra avec accompagnement professionnel.
+</p>
+<a href="services-omra.html" class="text-blue-600 font-semibold hover:underline">
+Voir plus →
+</a>
+</div>
+</div>
+
+<div class="bg-white rounded-2xl shadow hover:shadow-xl transition overflow-hidden">
+<img src="vc.jfif" class="h-60 w-full object-cover">
+<div class="p-8">
+<h2 class="text-2xl font-semibold text-blue-700 mb-4">Voyages & Circuits</h2>
+<p class="text-gray-600 mb-6">
+Voyages organisés et circuits touristiques pour découvrir le monde.
+</p>
+<a href="services-voyages.html" class="text-blue-600 font-semibold hover:underline">
+Voir plus →
+</a>
+</div>
+</div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-blue-700 text-white mt-20">
+  <div class="max-w-7xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-4 gap-10">
+    <div>
+      <h3 class="text-2xl font-bold mb-4">Spring Travel Services</h3>
+      <p class="text-blue-200">
+        Votre partenaire de confiance pour des voyages réussis.
+        En collaboration avec TunisiaBooking.
+      </p>
+    </div>
+    <div>
+      <h4 class="text-xl font-semibold mb-4">Liens rapides</h4>
+      <ul class="space-y-2 text-blue-200">
+        <li><a href="index.html" class="hover:underline">Home</a></li>
+        <li><a href="about.html" class="hover:underline">À propos</a></li>
+        <li><a href="services.html" class="hover:underline">Services</a></li>
+        <li><a href="agences.html" class="hover:underline">Nos agences</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-xl font-semibold mb-4">Services</h4>
+      <ul class="space-y-2 text-blue-200">
+        <li>Vols</li>
+        <li>Hôtels</li>
+        <li>Omra</li>
+        <li>Voyages organisés</li>
+        <li>Circuits</li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-xl font-semibold mb-4">Contact</h4>
+      <p>📞 +216 XX XXX XXX</p>
+      <p>📧 contact@springtravel.tn</p>
+      <p>📍 Tunisie</p>
+    </div>
+  </div>
+  <div class="bg-blue-800 text-center py-4 text-sm text-blue-200">
+    © 2026 Spring Travel Services · En partenariat avec TunisiaBooking
+  </div>
+</footer>
+</body>
+</html>

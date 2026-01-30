@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Contact | Spring Travel Services</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+body { font-family: 'Poppins', sans-serif; }
+</style>
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        primary: '#08a3ab',
+        secondary: '#0e11cf',
+      }
+    }
+  }
+}
+</script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+<header class="fixed w-full bg-white/90 backdrop-blur shadow z-50">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <img src="logo.jpg" class="h-14">
+    <nav class="space-x-6 hidden md:flex font-medium">
+      <a href="index.html" class="hover:text-primary">Home</a>
+      <a href="about.html" class="hover:text-primary">À propos</a>
+      <a href="services.html" class="hover:text-primary">Services</a>
+      <a href="agences.html" class="hover:text-primary ">Nos agences</a>
+      <a href="contact.html" class="text-primary font-semibold">Contact</a>
+    </nav>
+  </div>
+</header>
+<!-- HERO CONTACT -->
+<section class="relative pt-32 pb-24 bg-cover bg-center"
+style="background-image:url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');">
+
+<div class="absolute inset-0 bg-blue-900/70"></div>
+
+<div class="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center text-white">
+
+<!-- TEXT -->
+<div>
+<h1 class="text-4xl md:text-5xl font-bold mb-6">
+Contactez-nous
+</h1>
+<p class="text-lg leading-relaxed">
+Besoin d’informations ou d’un accompagnement personnalisé ?
+Notre équipe Spring Travel Services est à votre écoute
+pour vous aider à organiser votre prochain voyage
+en toute sérénité.
+</p>
+</div>
+
+<!-- FORM -->
+<div class="bg-white rounded-2xl shadow-2xl p-10 text-gray-800">
+
+<form id="contactForm" class="space-y-6">
+
+<div>
+<label class="block font-medium mb-2">Nom complet*</label>
+<input type="text" id="name"
+class="w-full border rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-blue-600">
+</div>
+
+<div>
+<label class="block font-medium mb-2">Email*</label>
+<input type="email" id="email"
+class="w-full border rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-blue-600">
+</div>
+
+<div>
+<label class="block font-medium mb-2">Téléphone</label>
+<input type="tel" id="phone"
+class="w-full border rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-blue-600">
+</div>
+
+<div>
+<label class="block font-medium mb-2">Région</label>
+<select id="service"
+class="w-full border rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-blue-600">
+<option value="">-- Choisir votre région --</option>
+ <option>Ariana</option>
+  <option>Béja</option>
+  <option>Ben Arous</option>
+  <option>Bizerte</option>
+  <option>Gabès</option>
+  <option>Gafsa</option>
+  <option>Jendouba</option>
+  <option>Kairouan</option>
+  <option>Kasserine</option>
+  <option>Kébili</option>
+  <option>Le Kef</option>
+  <option>Mahdia</option>
+  <option>Manouba</option>
+  <option>Médenine</option>
+  <option>Monastir</option>
+  <option>Nabeul</option>
+  <option>Sfax</option>
+  <option>Sidi Bouzid</option>
+  <option>Siliana</option>
+  <option>Sousse</option>
+  <option>Tataouine</option>
+  <option>Tozeur</option>
+  <option>Tunis</option>
+  <option>Zaghouan</option>
+</select>
+</div>
+
+<div>
+<label class="block font-medium mb-2">Message</label>
+<textarea id="message" rows="4"
+class="w-full border rounded-lg p-4 focus:outline-none focus:ring-2 focus:ring-blue-600"></textarea>
+</div>
+
+<p id="error" class="text-red-600 hidden">
+Veuillez remplir tous les champs correctement.
+</p>
+
+<button type="submit"
+class="w-full bg-blue-600 text-white py-4 rounded-full font-semibold
+hover:bg-blue-700 transition">
+Envoyer la demande
+</button>
+
+</form>
+
+</div>
+</div>
+</section>
+
+<!-- JS VALIDATION -->
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const phone = document.getElementById("phone").value.trim();
+  const service = document.getElementById("service").value;
+  const message = document.getElementById("message").value.trim();
+  const error = document.getElementById("error");
+
+  if(name && email && phone && service && message) {
+    window.location.href = "thankyou.html";
+  } else {
+    error.classList.remove("hidden");
+  }
+});
+</script>
+
+<!-- FOOTER -->
+<footer class="bg-blue-700 text-white mt-20">
+  <div class="max-w-7xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-4 gap-10">
+    <div>
+      <h3 class="text-2xl font-bold mb-4">Spring Travel Services</h3>
+      <p class="text-blue-200">
+        Votre partenaire de confiance pour des voyages réussis.
+        En collaboration avec TunisiaBooking.
+      </p>
+    </div>
+    <div>
+      <h4 class="text-xl font-semibold mb-4">Liens rapides</h4>
+      <ul class="space-y-2 text-blue-200">
+        <li><a href="index.html" class="hover:underline">Home</a></li>
+        <li><a href="about.html" class="hover:underline">À propos</a></li>
+        <li><a href="services.html" class="hover:underline">Services</a></li>
+        <li><a href="agences.html" class="hover:underline">Nos agences</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-xl font-semibold mb-4">Services</h4>
+      <ul class="space-y-2 text-blue-200">
+        <li>Vols</li>
+        <li>Hôtels</li>
+        <li>Omra</li>
+        <li>Voyages organisés</li>
+        <li>Circuits</li>
+      </ul>
+    </div>
+    <div>
+      <h4 class="text-xl font-semibold mb-4">Contact</h4>
+      <p>📞 +216 XX XXX XXX</p>
+      <p>📧 contact@springtravel.tn</p>
+      <p>📍 Tunisie</p>
+    </div>
+  </div>
+  <div class="bg-blue-800 text-center py-4 text-sm text-blue-200">
+    © 2026 Spring Travel Services · En partenariat avec TunisiaBooking
+  </div>
+</footer>
+</body>
+</html>
